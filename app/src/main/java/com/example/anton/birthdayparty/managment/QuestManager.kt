@@ -32,9 +32,10 @@ class QuestManager {
     fun tryToFinishTask(keyCode: String): GameEventType {
         val task = this.questList[this.level]
         return if (task.keyCode == keyCode) {
-            if (++this.level == this.questList.size) {
+            if (this.level == this.questList.size - 1) {
                 GameEventType.GAME_IS_FINISHED
             } else {
+                this.level++
                 GameEventType.TASK_IS_FINISHED
             }
         } else {
@@ -47,8 +48,8 @@ class QuestManager {
      */
 
     init {
-        this.questList.add(TASK_2)
         this.questList.add(TASK_1)
+        this.questList.add(TASK_2)
     }
 
     enum class GameEventType {

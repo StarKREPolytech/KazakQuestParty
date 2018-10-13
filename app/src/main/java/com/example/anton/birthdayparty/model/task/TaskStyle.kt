@@ -7,5 +7,5 @@ data class TaskStyle(
     val fabColorBgId: Int,
     val bottomBarColorBgId: Int,
     val descriptionTextColorId: Int,
-    val inputTextColorId: Int
+    val keyCodeTextColorId: Int
 )
