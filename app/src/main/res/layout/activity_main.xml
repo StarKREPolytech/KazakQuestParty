@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".MainActivity"
+>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:fabCradleRoundedCornerRadius="16dp"
+                android:backgroundTint="@color/grey_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Widget.MaterialComponents.BottomAppBar"
+        >
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                app:backgroundTint="@color/purple_dark"
+                android:src="@drawable/ic_add"
+                app:layout_anchor="@id/bottom_app_bar"
+        />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView
+            android:id="@+id/description"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="150dp"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_grey_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="jjjjjjjjjjjjjjjjjj"/>
+
+    <EditText
+            android:id="@+id/key_code_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:maxLength="4"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:hint="@string/input_key_code"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:background="@drawable/bg_grey_dark"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" tools:targetApi="o"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

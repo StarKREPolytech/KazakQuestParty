@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic colors -->
+    <color name="white">@android:color/white</color>
+
+    <!-- Black with grey style -->
+    <color name="black">@android:color/black</color>
+    <color name="grey_light">#4F4D50</color>
+    <color name="grey_dark">#312F32</color>
+
+    <!-- Pink with purple style -->
+    <color name="pink">#F899F5</color>
+    <color name="purple_light">#E283E1</color>
+    <color name="purple_dark">#9B2890</color>
+
+    <!-- Green with black style -->
+    <color name="green_light">#76E62A</color>
+    <color name="green_dark">#4D8426</color>
+
+</resources>
