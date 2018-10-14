@@ -4,7 +4,6 @@ import com.example.anton.birthdayparty.R
 import com.example.anton.birthdayparty.model.task.Task
 import com.example.anton.birthdayparty.model.task.TaskStyle
 
-
 private const val DESCRIPTION = R.drawable.task_9
 
 private const val KEYCODE = "1321"
