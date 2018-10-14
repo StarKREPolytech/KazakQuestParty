@@ -2,9 +2,9 @@ package com.example.anton.birthdayparty
 
 import android.annotation.SuppressLint
 import android.content.res.ColorStateList
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
+import android.widget.MediaController
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.anton.birthdayparty.core.App
@@ -16,30 +16,29 @@ class MainActivity : AppCompatActivity() {
     private val questManager
         get() = (this.application as App).questManager
 
-    private lateinit var mediaPlayer: MediaPlayer
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.setContentView(R.layout.activity_main)
         this.initFab()
-        this.initMediaPlayer()
-        this.drawNextTask()
+//        this.drawNextTask()
+        this.drawVictory()
     }
 
     @SuppressLint("NewApi")
     override fun onStart() {
         super.onStart()
+        this.initVideoPlayer()
     }
 
-    override fun onPause() {
-        super.onPause()
-        this.resetMediaPlayer()
-    }
-
-    private fun initMediaPlayer() {
-        val player = MediaPlayer.create(this.applicationContext, R.raw.victory_theme)
-        player.setOnCompletionListener { this.resetMediaPlayer() }
-        this.mediaPlayer = player
+    private fun initVideoPlayer() {
+        val mediaController = MediaController(this)
+        mediaController.setAnchorView(this.video)
+        this.video.setMediaController(mediaController)
+        this.video.setVideoPath("android.resource://" + this.packageName + "/" + R.raw.movie)
+        this.video.setOnCompletionListener {
+            this.finish()
+            System.exit(0)
+        }
     }
 
     private fun initFab() {
@@ -68,19 +67,19 @@ class MainActivity : AppCompatActivity() {
         this.key_code_edit_text.setBackgroundResource(style.keyCodeBgColorId)
         this.key_code_edit_text.setTextColor(this.getColor(style.keyCodeTextColorId))
         this.bottom_app_bar.backgroundTintList = ColorStateList.valueOf(this.getColor(style.bottomBarColorBgId))
-//        this.fab.backgroundTintList = ColorStateList.valueOf(this.getColor(style.fabColorBgId))
         //Reset edit text:
         this.key_code_edit_text.text.clear()
     }
 
     private fun drawVictory() {
-        this.mediaPlayer.start()
         this.coordinator.visibility = View.GONE
+        this.description.visibility = View.GONE
         this.key_code_edit_text.visibility = View.GONE
+        this.launchVideo()
     }
 
-    private fun resetMediaPlayer() {
-        this.mediaPlayer.stop()
-        this.mediaPlayer.release()
+    private fun launchVideo() {
+        this.video.visibility = View.VISIBLE
+        this.video.start()
     }
 }

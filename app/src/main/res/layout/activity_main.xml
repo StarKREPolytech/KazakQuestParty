@@ -51,6 +51,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
     />
 
+    <VideoView
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:id="@+id/video"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
     <EditText
             android:id="@+id/key_code_edit_text"
             android:layout_width="wrap_content"
