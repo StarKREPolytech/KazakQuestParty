@@ -10,7 +10,7 @@ private const val KEYCODE = "7541"
 
 private val STYLE = TaskStyle(
     R.color.grey_dark,
-    R.color.grey_dark,
+    R.color.grey_light,
     R.color.grey_smooth,
     R.color.white
 )

@@ -1,8 +1,7 @@
 package com.example.anton.birthdayparty.managment
 
 import com.example.anton.birthdayparty.model.task.Task
-import com.example.anton.birthdayparty.model.task.tasks.TASK_1
-import com.example.anton.birthdayparty.model.task.tasks.TASK_2
+import com.example.anton.birthdayparty.model.task.tasks.*
 
 class QuestManager {
 
@@ -50,8 +49,11 @@ class QuestManager {
     init {
         this.questList.add(TASK_1)
         this.questList.add(TASK_2)
-//        this.questList.add(TASK_3)
-//        this.questList.add(TASK_4)
+        this.questList.add(TASK_3)
+        this.questList.add(TASK_4)
+        this.questList.add(TASK_5)
+        this.questList.add(TASK_6)
+        this.questList.add(TASK_7)
     }
 
     enum class GameEventType {

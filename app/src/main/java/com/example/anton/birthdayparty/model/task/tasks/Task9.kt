@@ -1,6 +1,7 @@
 package com.example.anton.birthdayparty.model.task.tasks
 
 import com.example.anton.birthdayparty.R
+import com.example.anton.birthdayparty.model.task.Task
 import com.example.anton.birthdayparty.model.task.TaskStyle
 
 
@@ -14,3 +15,5 @@ private val STYLE = TaskStyle(
     R.color.green_light,
     R.color.white
 )
+
+val TASK_9 = Task(DESCRIPTION, KEYCODE, STYLE)

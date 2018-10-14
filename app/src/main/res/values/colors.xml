@@ -6,17 +6,37 @@
 
     <!-- Black with grey style -->
     <color name="black">@android:color/black</color>
-    <color name="grey_light">#4F4D50</color>
     <color name="grey_dark">#242124</color>
-    <color name="grey_smooth">#1b181b</color>
+    <color name="grey_light">#504d50</color>
+    <color name="grey_smooth">#262a32</color>
 
     <!-- Pink with purple style -->
-    <color name="pink">#c266c0</color>
-    <color name="purple_light">#F894F7</color>
-    <color name="purple_dark">#9B2890</color>
+    <color name="purple_smooth">#d970d5</color>
+    <color name="purple_light">#f894f7</color>
+    <color name="purple_dark">#9a2890</color>
 
     <!-- Green with black style -->
     <color name="green_light">#76E62A</color>
-    <color name="green_dark">#4D8426</color>
+    <color name="green_darkness">#4D8426</color>
+    <color name="green_smooth">#447620</color>
+
+
+    <color name="blue_light">#BDC3C7</color>
+    <color name="blue_smooth">#889097</color>
+    <color name="blue_dark">#2d4559</color>
+
+    <color name="red_light">#D93C57</color>
+    <color name="red_smooth">#bf3049</color>
+    <color name="violet">#542076</color>
+
+    <color name="yellow">#FFD452</color>
+    <color name="yellow_smooth">#c7a339</color>
+
+    <color name="sea">#99F2C8</color>
+    <color name="sea_dark">#214634</color>
+    <color name="sea_smooth">#367355</color>
+
+    <color name="light_white">#FFFBD5</color>
+    <color name="blood">#bf3049</color>
 
 </resources>
