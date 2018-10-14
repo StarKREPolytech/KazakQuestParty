@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         this.setContentView(R.layout.activity_main)
         this.initFab()
-//        this.drawNextTask()
-        this.drawVictory()
+        this.drawNextTask()
+//        this.drawVictory()
     }
 
     @SuppressLint("NewApi")
@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this.baseContext, "Неверный ключ", Toast.LENGTH_SHORT).show()
     }
 
-    @SuppressLint("NewApi")
     private fun drawNextTask() {
         val newTask = this.questManager.getCurrentTask()
         val style = newTask.style
@@ -65,8 +64,10 @@ class MainActivity : AppCompatActivity() {
         this.coordinator.background = this.getDrawable(style.coordinatorBgColorId)
         this.description.background = getDrawable(newTask.descriptionId)
         this.key_code_edit_text.setBackgroundResource(style.keyCodeBgColorId)
-        this.key_code_edit_text.setTextColor(this.getColor(style.keyCodeTextColorId))
-        this.bottom_app_bar.backgroundTintList = ColorStateList.valueOf(this.getColor(style.bottomBarColorBgId))
+        this.key_code_edit_text.setTextColor(this.resources.getColor(style.keyCodeTextColorId))
+        this.bottom_app_bar.backgroundTintList = ColorStateList.valueOf(
+            this.resources.getColor(style.bottomBarColorBgId)
+        )
         //Reset edit text:
         this.key_code_edit_text.text.clear()
     }
