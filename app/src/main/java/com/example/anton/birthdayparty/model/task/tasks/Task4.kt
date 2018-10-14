@@ -4,15 +4,15 @@ import com.example.anton.birthdayparty.R
 import com.example.anton.birthdayparty.model.task.Task
 import com.example.anton.birthdayparty.model.task.TaskStyle
 
-private const val DESCRIPTION = R.drawable.task_2
+private const val DESCRIPTION = R.drawable.task_4
 
-private const val KEYCODE = "7541"
+private const val KEYCODE = "4321"
 
 private val STYLE = TaskStyle(
-    R.color.grey_dark,
-    R.color.grey_dark,
-    R.color.grey_smooth,
+    R.color.purple_dark,
+    R.color.green_dark,
+    R.color.green_light,
     R.color.white
 )
 
-val TASK_2 = Task(DESCRIPTION, KEYCODE, STYLE)
+//val TASK_4 = Task(DESCRIPTION, KEYCODE, STYLE)

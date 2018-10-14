@@ -50,6 +50,8 @@ class QuestManager {
     init {
         this.questList.add(TASK_1)
         this.questList.add(TASK_2)
+//        this.questList.add(TASK_3)
+//        this.questList.add(TASK_4)
     }
 
     enum class GameEventType {

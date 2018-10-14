@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         this.drawNextTask()
     }
 
+    @SuppressLint("NewApi")
+    override fun onStart() {
+        super.onStart()
+    }
+
     override fun onPause() {
         super.onPause()
         this.resetMediaPlayer()
@@ -58,21 +63,18 @@ class MainActivity : AppCompatActivity() {
         val newTask = this.questManager.getCurrentTask()
         val style = newTask.style
         //Set style:
-        this.description.text = newTask.description
         this.coordinator.background = this.getDrawable(style.coordinatorBgColorId)
-        this.description.setBackgroundResource(style.descriptionBgColorId)
-        this.description.setTextColor(this.getColor(style.descriptionTextColorId))
+        this.description.background = getDrawable(newTask.descriptionId)
         this.key_code_edit_text.setBackgroundResource(style.keyCodeBgColorId)
         this.key_code_edit_text.setTextColor(this.getColor(style.keyCodeTextColorId))
         this.bottom_app_bar.backgroundTintList = ColorStateList.valueOf(this.getColor(style.bottomBarColorBgId))
-        this.fab.backgroundTintList = ColorStateList.valueOf(this.getColor(style.fabColorBgId))
+//        this.fab.backgroundTintList = ColorStateList.valueOf(this.getColor(style.fabColorBgId))
         //Reset edit text:
         this.key_code_edit_text.text.clear()
     }
 
     private fun drawVictory() {
         this.mediaPlayer.start()
-        this.description.text = "Поздравляем, вы выиграли массаж!!!"
         this.coordinator.visibility = View.GONE
         this.key_code_edit_text.visibility = View.GONE
     }

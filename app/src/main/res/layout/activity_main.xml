@@ -32,26 +32,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fabSize="normal"
-                app:backgroundTint="@color/purple_dark"
-                android:src="@drawable/ic_add"
+                app:backgroundTint="@color/black"
+                android:src="@drawable/fab"
                 app:layout_anchor="@id/bottom_app_bar"
         />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    <TextView
+
+
+    <ImageView
             android:id="@+id/description"
             android:layout_width="250dp"
             android:layout_height="300dp"
             android:layout_marginBottom="150dp"
-            android:textColor="@color/white"
-            android:textSize="19sp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/bg_grey_light"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:text="jjjjjjjjjjjjjjjjjj"/>
+    />
 
     <EditText
             android:id="@+id/key_code_edit_text"
@@ -63,6 +61,7 @@
             android:paddingEnd="50dp"
             android:paddingTop="12dp"
             android:paddingBottom="12dp"
+            android:textColorHint="@color/white"
             android:hint="@string/input_key_code"
             android:textColor="@color/white"
             android:textSize="17sp"

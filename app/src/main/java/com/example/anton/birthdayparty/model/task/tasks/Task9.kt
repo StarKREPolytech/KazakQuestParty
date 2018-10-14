@@ -1,18 +1,16 @@
 package com.example.anton.birthdayparty.model.task.tasks
 
 import com.example.anton.birthdayparty.R
-import com.example.anton.birthdayparty.model.task.Task
 import com.example.anton.birthdayparty.model.task.TaskStyle
 
-private const val DESCRIPTION = R.drawable.task_1
 
-private const val KEYCODE = "1209"
+private const val DESCRIPTION = R.drawable.task_4
+
+private const val KEYCODE = "4321"
 
 private val STYLE = TaskStyle(
-    R.color.purple_light,
     R.color.purple_dark,
-    R.color.pink,
+    R.color.green_dark,
+    R.color.green_light,
     R.color.white
 )
-
-val TASK_1 = Task(DESCRIPTION, KEYCODE, STYLE)

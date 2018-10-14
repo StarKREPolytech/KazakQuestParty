@@ -7,11 +7,12 @@
     <!-- Black with grey style -->
     <color name="black">@android:color/black</color>
     <color name="grey_light">#4F4D50</color>
-    <color name="grey_dark">#312F32</color>
+    <color name="grey_dark">#242124</color>
+    <color name="grey_smooth">#1b181b</color>
 
     <!-- Pink with purple style -->
-    <color name="pink">#F899F5</color>
-    <color name="purple_light">#E283E1</color>
+    <color name="pink">#c266c0</color>
+    <color name="purple_light">#F894F7</color>
     <color name="purple_dark">#9B2890</color>
 
     <!-- Green with black style -->
