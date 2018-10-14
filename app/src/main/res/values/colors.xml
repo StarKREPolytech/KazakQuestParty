@@ -16,27 +16,33 @@
     <color name="purple_dark">#9a2890</color>
 
     <!-- Green with black style -->
-    <color name="green_light">#76E62A</color>
-    <color name="green_darkness">#4D8426</color>
-    <color name="green_smooth">#447620</color>
+    <color name="green_light">#75e629</color>
+    <color name="green_smooth">#3f6325</color>
 
 
-    <color name="blue_light">#BDC3C7</color>
-    <color name="blue_smooth">#889097</color>
-    <color name="blue_dark">#2d4559</color>
+    <color name="blue_light">#bac2c5</color>
+    <color name="blue_smooth">#8b959e</color>
+    <color name="blue_dark">#2f3f4f</color>
 
-    <color name="red_light">#D93C57</color>
-    <color name="red_smooth">#bf3049</color>
-    <color name="violet">#542076</color>
+    <color name="red_light">#e50059</color>
+    <color name="red_smooth">#b60560</color>
+    <color name="violet">#5f196f</color>
 
-    <color name="yellow">#FFD452</color>
-    <color name="yellow_smooth">#c7a339</color>
+    <color name="violet_smooth">#544a7d</color>
 
-    <color name="sea">#99F2C8</color>
-    <color name="sea_dark">#214634</color>
-    <color name="sea_smooth">#367355</color>
+    <color name="yellow">#fdd866</color>
+    <color name="yellow_smooth">#c5a769</color>
 
-    <color name="light_white">#FFFBD5</color>
-    <color name="blood">#bf3049</color>
+    <color name="sea">#81fbca</color>
+    <color name="sea_dark">#1a4639</color>
+    <color name="sea_smooth">#5dbd98</color>
+
+    <color name="light_white">#fdfdd7</color>
+    <color name="blood_dark">#bb0133</color>
+    <color name="blood_smooth">#e9a69e</color>
+
+    <color name="holo_green">#00fa90</color>
+    <color name="holo_blue">#3461de</color>
+    <color name="holo_green_smooth">#02cca6</color>
 
 </resources>

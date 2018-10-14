@@ -9,9 +9,9 @@ private const val DESCRIPTION = R.drawable.task_3
 private const val KEYCODE = "3421"
 
 private val STYLE = TaskStyle(
-    R.color.black,
+    R.color.grey_dark,
     R.color.green_light,
-    R.color.green_darkness,
+    R.color.green_smooth,
     R.color.white
 )
 

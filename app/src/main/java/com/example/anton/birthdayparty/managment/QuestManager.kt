@@ -54,6 +54,8 @@ class QuestManager {
         this.questList.add(TASK_5)
         this.questList.add(TASK_6)
         this.questList.add(TASK_7)
+        this.questList.add(TASK_8)
+        this.questList.add(TASK_9)
     }
 
     enum class GameEventType {
